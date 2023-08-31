@@ -10,6 +10,7 @@ openPopupLink.addEventListener("click", () => {
       ",top=" +
       (screen.height - 300) / 2
   );
+
   // Write content to the popup window
   popupWindow.document.write(`
       <html>
@@ -24,6 +25,7 @@ openPopupLink.addEventListener("click", () => {
       </html>
     `);
 });
+
 
 //for registration validation msg:
 let fullName;
@@ -41,10 +43,12 @@ let rPasswordError;
 let agreeCheckbox;
 let termsError;
 
+
 document
   .getElementById("register-submit")
   .addEventListener("click", (event) => {
     event.preventDefault();
+
 
     // Validation checks
     let isValid = true;
@@ -123,6 +127,7 @@ document
     }
   });
 
+
 //fnc to remove error msg
 function removeErrorMessage(input) {
   if (input.id === "name") {
@@ -172,6 +177,7 @@ function removeErrorMessage(input) {
   }
 }
 
+
 //above fnc suppport:::fnc
 let inputs = document.getElementsByTagName("input");
 for (let i = 0; i < inputs.length; i++) {
@@ -194,6 +200,7 @@ showPW.addEventListener("click", () => {
     }
   }
 });
+
 
 //login with third party warn--->
 const registers = document.getElementsByClassName("register-with");
