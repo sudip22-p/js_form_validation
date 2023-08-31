@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./style.css">
+  <title>Register Page</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="form-container register">
+            <form action="./index.html">
+                <h3>Register</h3>
+                <div class="label" id="name-label">Full Name</div>
+                <input type="text" id="name" name="name" required>
+                <div class="label" id="id-label">Username or Email address</div>
+                <input type="text" id="id" name="id" required>
+                <div class="label" id="password-label">Password<i class="fa fa-eye-slash toggle-password" id="toggle-password"></i></div>
+                <input class="register-password" type="password" id="password" name="password" required>
+                <div class="label" id="r-password-label">Repeat Password</div>
+                <input class="register-password" type="password" id="r-password" name="r-password" required>
+                <div class="terms-n-conditions" id="terms-label">
+                    <input type="checkbox" name="terms" id="terms" required>
+                    <span>I agree to all <span class="pop-up-on-click" >terms and conditions!</span></span>
+                </div>
+                <input id="register-submit" type="submit" value="Register">
+            </form>
+            <div class="go-with">
+                <ul>
+                    <li><a href="#"><i class="register-with fa fa-facebook-square fa-3x" style="color: #5287e9;"></i></a></li>
+                    <li><a href="#"><i class="register-with fa fa-google-plus-square fa-3x" style="color: #e91e63;"></i></a></li>
+                </ul>
+            </div>
+            <div class="toggle goto-login">Already a member?<a href="./index.html">Sign In</a></div>
+        </div>
+    </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
